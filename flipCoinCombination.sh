@@ -1,1 +1,10 @@
-#This problem displays winning percentage of Head or Tail, Combination of Singlet, Doublet and triplet.
+#!/bin/bash -x
+
+result=$(($RANDOM%2));
+if [ $result -eq 0 ];
+then
+	echo "Head";
+elif [ $result -eq 1 ];
+then
+	echo "Tail";
+fi
